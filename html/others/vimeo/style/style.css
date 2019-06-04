@@ -1,0 +1,286 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+body
+{
+	background-color:#191919;
+	color:#DDDDDD;
+	font-family: Century Gothic, sans-serif;
+	text-shadow: 1px 1px 2px #111111;
+}
+input,select
+{
+	font-family: Century Gothic, sans-serif;
+	font-size:90%;
+}
+header
+{
+	height:50px;
+	margin-bottom:20px;
+	background-color:#666666;
+	text-align:center;
+	line-height:50px;
+	font-weight:bold;
+	font-size:120%;
+	-moz-box-shadow: 2px 2px 5px #111111;
+	-webkit-box-shadow: 2px 2px 5px #111111;
+	box-shadow: 2px 2px 5px #111111;
+	background: -webkit-linear-gradient(left top, #777777 , #333333); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #777777, #333333); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #777777, #333333); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #777777 , #333333); /* Standard syntax */
+}
+a
+{
+	color:white;
+	text-decoration:none;
+	font-weight:bold;
+	text-shadow: 1px 1px 2px #111111;
+	transition:0.3s ease;
+}
+a:hover
+{
+	color:#6ac3c7;
+}
+#main
+{
+	max-width:1200px;
+	margin-left:auto;
+	margin-right:auto;
+}
+footer
+{
+	height:50px;
+	margin-top:30px;
+	background-color:#555555;
+	text-align:center;
+	line-height:50px;
+	-moz-box-shadow: -2px -2px 5px #111111;
+	-webkit-box-shadow: -2px -2px 5px #111111;
+	box-shadow: -2px -2px 5px #111111;
+	font-size:80%;
+	background: -webkit-linear-gradient(left top, #555555 , #191919); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #555555, #191919); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #555555, #191919); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #555555 , #191919); /* Standard syntax */
+}
+img
+{
+	vertical-align:middle;
+}
+.loader
+{
+	position:absolute;
+	width:48px;
+	height:48px;
+	z-index:2;
+	background:url('../image/anim_loader.gif') center center no-repeat;
+}
+.font_small
+{
+	font-size:70%;
+}
+.font_medium
+{
+	font-size:90%;
+}
+
+/* preview */
+#previewContainer
+{
+	position:fixed;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	background:rgba(25,25,25,0.9);
+	background: -webkit-linear-gradient(rgba(25,25,25,0.7),rgba(25,25,25,0.9)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(rgba(25,25,25,0.7), rgba(25,25,25,0.9)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(rgba(25,25,25,0.7), rgba(25,25,25,0.9)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(rgba(25,25,25,0.7), rgba(25,25,25,0.9)); /* Standard syntax */
+}
+#preview
+{
+	position:relative;
+	width:80%;
+	max-width:1280px;
+	min-width:720px;
+	margin-left:10%;
+	background:black;
+}
+#title
+{
+	line-height:20px;
+	font-weight:bold;
+	margin:10px 0;
+}
+#button_close
+{
+	position:fixed;
+	top:20px;
+	right:20px;
+	width:50px;
+	height:50px;
+	transition:0.3s ease;
+}
+#button_close:hover
+{
+	opacity:0.5;
+	cursor:pointer;
+}
+#preview a
+{
+	display:block;
+	margin:16px 0;
+}
+#player
+{
+	width:74%;
+	height:100%;
+	float:left;
+	margin:0 2%;
+}
+#info
+{	
+	width:20%;
+	float:left;
+	margin-right:2%;
+	margin-top:50px;
+}
+#info p
+{
+	height:60%;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+#info a span
+{
+	margin-left:10px;
+}
+#info img
+{
+	border:1px solid #444444;
+}
+
+/* thumbs */
+#thumbs:after, #thumbs ul:after
+{
+	content: " ";
+	display: block; 
+	height: 0; 
+	clear: both;
+}
+#thumbs li 
+{ 
+	display:block;
+	float:left;
+	padding:0;
+	width:200px;
+	height:240px;
+	margin:0 20px;
+}
+#thumbs figure 
+{ 
+	position:relative;
+}
+.img_thumb
+{
+	border:1px solid #444444;
+	-moz-box-shadow: 1px 1px 3px #111111;
+	-webkit-box-shadow: 1px 1px 3px #111111;
+	box-shadow: 1px 1px 3px #111111;
+	border-radius:2px;
+	transition:0.3s ease;
+}
+.stats
+{
+	width:200px;
+}
+.stats span:first-child
+{
+	padding-right:2px;
+}
+.upload_date
+{
+	float:right;
+}
+.title
+{
+	width:200px;
+	display:block;
+	margin:5px 0;
+	max-height:44px;
+	overflow:hidden;
+	font-size:90%;
+}
+.hidden
+{
+	display:none;
+	transition:0.3s ease;
+}
+.thumb
+{
+	display:block;
+}
+.thumb:hover
+{
+	cursor:pointer;
+}
+.thumb:hover .hidden
+{
+	position:absolute;
+	top:0;
+	width:200px;
+	height:150px;
+	overflow:hidden;
+	display:block;
+	margin:10px;
+	color:white;
+}
+.thumb:hover .img_thumb
+{
+	opacity:0.3;
+}
+.button_play
+{
+	position:absolute;
+	left:66px;
+	top:46px;
+	width:50px;
+	height:50px;
+}
+.duration
+{
+	position:absolute;
+	right:3px;
+	top:130px;
+	padding:3px;
+	background:rgba(25,25,25,0.6);
+	border-radius:2px;
+}
+
+/* load more */
+#loadmore input
+{
+	width:40%;
+	height:30px;
+	margin:16px 30%;
+	border:none;
+	border-radius:2px;
+	transition:0.3s ease;
+}
+#loadmore input:hover
+{
+	cursor:pointer;
+	opacity:0.6;
+}
+
+/* responsive design */
+@media all and (max-width:1024px)
+{
+#preview
+{
+	width:100%;
+	margin-left:0;
+}
+}

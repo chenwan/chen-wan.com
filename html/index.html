@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hi, I'm Wan." />
+    <meta name="keywords" content="Wan Chen, Designer, Software Engineer" />
+    <meta name="author" content="Wan Chen" />
+
+    <title>Wan Chen</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Noto+Serif' />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="js/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body id="index">
+    <div id="index_wrapper">
+        <canvas data-processing-sources="processing/processing.pde"></canvas>
+        <div id="intro">Hi, I'm Wan.<br />I live between art and science, design and engineering.</div>
+        <div id="arrow">&nbsp;</div>
+        <div id="menu_wrapper">
+            <a id="menu_projects" href="projects.html">Code</a>
+            <a id="menu_portfolio" href="portfolio.html">Art</a>
+            <a id="menu_about" href="about.html">About</a>
+            <a id="menu_sometimesiwonder" href="sometimesiwonder/index.php">Wonderlust</a>
+        </div>
+    </div>
+    <script type="text/javascript">// <![CDATA[
+        $("#menu_wrapper a").hover(function () {
+            $("#intro").css("opacity", "1");
+            $("#arrow").css("border-top", "15px solid rgba(255,20,20,0.5");
+        }, function () {
+            $("#intro").css("opacity", "0.5");
+            $("#arrow").css("border-top", "15px solid rgba(255,20,20,0.25");
+        });
+        $("#menu_about").hover(function () {
+            $("#intro").html("Hi, I'm Wan.<br>I live between art and science, design and engineering.");
+            $("#arrow").css("left", "350px");
+        });
+        $("#menu_portfolio").hover(function () {
+            $("#intro").html("3D modeling, illustration, water color, sketch.<br>Tools: Maya, Photoshop, brush and pencil, right brain.");
+            $("#arrow").css("left", "210px");
+        });
+        $("#menu_projects").hover(function () {
+            $("#intro").html("Computer graphics, physically-based animation, game development, web development.<br>Tools: C++, OpenGL, JavaScript, Unity, left brain.");
+            $("#arrow").css("left", "80px");
+        });
+        $("#menu_sometimesiwonder").hover(function () {
+            $("#intro").html("Sometimes I wonder...");
+            $("#arrow").css("left", "530px");
+        });
+        // ]]></script>
+</body>
+
+</html>

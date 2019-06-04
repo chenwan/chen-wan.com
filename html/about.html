@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hi, I'm Wan. I'm a designer and engineer." />
+    <meta name="keywords" content="Wan Chen, Designer, Software Engineer" />
+    <meta name="author" content="Wan Chen" />
+    <title>Wan Chen | About</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Noto+Serif' />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div id="navigation">
+            <span id="logo">
+                <a href="index.html">
+                    <span id="logo_head">W a n <span id="logo_tail">d e r l u s t</span></span>
+                </a>
+            </span>
+            <ul>
+                <li><a href="projects.html">Code</a></li>
+                <li><a href="portfolio.html">Art</a></li>
+                <li class="selected"><a href="about.html">About</a></li>
+                <li><a href="sometimesiwonder/index.php">Wonderlust</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="center_wrapper">
+        <div id="content_wrapper">
+            <div id="about_left">
+                <p><img src="images/myself.png" alt="wan chen" /></p>
+                <p>Wan Chen</p>
+                <p>Creative Technology @ HBO</p>
+                <p>Computer Graphics @ Penn</p>
+                <p><a href="https://www.linkedin.com/in/chen-wan/" target="_blank">LinkedIn</a></p>
+                <!--p><a href="others/Wan Chen_Resume.pdf" target="_blank"><span>Resume</span></a></p-->
+            </div>
+            <div id="about_right">
+                <p>Wan is a human that can fly.</p>
+                <p>She is specialized in:</p>
+                <ul>
+                    <li>Computer graphics</li>
+                    <li>Game development</li>
+                    <li>User experience</li>
+                </ul>
+                <p>She is interested in exploring:</p>
+                <ul>
+                    <li>Artificial intelligence</li>
+                    <li>Everything but artificial intelligence</li>
+                </ul>
+                <p>Things that she loves:</p>
+                <ul>
+                    <li>Film</li>
+                    <li>Architecture</li>
+                    <li>Music</li>
+                    <li>Literature</li>
+                    <li>Languages</li>
+                </ul>
+                <a class="more" href="#">A little more &darr;</a>
+                <ul>
+                    <li class="hidden">...Everything about art</li>
+                    <li class="hidden">Freedom</li>
+                    <li class="hidden">Love</li>
+                    <li class="hidden">Clouds</li>
+                    <li class="hidden">Red</li>
+                    <li class="hidden">Beautiful girls</li>
+                    <li class="hidden">Smiling faces</li>
+                    <li class="hidden">Traveling</li>
+                    <li class="hidden">Running</li>
+                    <li class="hidden">Flying</li>
+                    <li class="hidden">Wandering</li>
+                    <li class="hidden">Optical illusions</li>
+                    <li class="hidden">Fractal art</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p>&copy; Wan Chen 2019</p>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+    <script type="text/javascript">// <![CDATA[
+        $(".more").click(function () {
+            $(".hidden").slideToggle('200');
+        });
+        $(window).load(function () {
+            $('#content_wrapper').fadeIn();
+        });
+        // ]]></script>
+</body>
+
+</html>

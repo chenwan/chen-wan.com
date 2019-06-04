@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>iPaint!</title>
+
+		<link rel="stylesheet" type="text/css" media="screen" href="style.css">
+		<link href='http://fonts.googleapis.com/css?family=Anonymous+Pro' rel='stylesheet' type='text/css'>
+		
+	</head>
+
+	<body>
+		
+		<div class="container">
+		
+			<div id = "logo">
+				<img src = "images/logo.png">
+			</div>
+			<div id = "tip">
+				<p>iPaint! is an experimental gesture based drawing tool using only your webcam.</p>
+				<p>You can use your fingers to draw and play small games now.  Have fun!</p>
+			</div>
+			<div class="button brush">
+				<p><a href="#"><img src = "images/pencil.png" title = "pencil"/></a><a href="#"><img src = "images/eraser.png" title = "eraser"/></a></p>
+			</div>
+			
+			<div class="button color">
+				<p><a href="#"><img src = "images/red.png" title = "red"/></a><a href="#"><img src = "images/yellow.png" title = "yellow"/></a></p>
+			</div>
+		
+			<div class="button size">
+				<p><a href="#"><img src = "images/small.png" title = "small"/></a><a href="#"><img src = "images/large.png" title = "large"/></a></p>
+			</div>
+			
+			<div class = "button type">
+				<p><a href="#"><img src = "images/ballpool.png" title = "Play Ballpool"/></a><a href="#"><img src = "images/hanoi.png" title = "Play Tower of Hanoi"/></a></p>
+			</div>
+			
+			<div class="button file">
+				<p><a href="#"><img src = "images/redo.png" title = "redo"/></a><a href="#"><img src = "images/clear-all.png" title = "Clear All"/></a></p>
+			</div>
+			
+			<canvas id="canvas">
+				
+			</canvas>
+		</div>
+		
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src = "javascript.js"></script>
+	
+	</body>
+
+</html>

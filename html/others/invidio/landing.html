@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ABID - Content Creator home</title>
+		<link href="static/css/landing.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<header>
+		</header>
+		<section id = "main">
+			<img src = "static/images/logo.png"/ id = "logo">
+			<div id = "video" class = "box">
+				<img src = "static/images/square.png" width='80' height = '80' id = "playbtn"/>
+			</div>
+			<fieldset id = "login" class = "box">
+				<div id = "login-wrap">
+					<input type = "text" placeholder = "E-mail" size = "29"><br />
+					<input type = "text" placeholder = "Password" size = "29"><br />
+					<input type = "checkbox"><span style = "font-size: 12px">Remember me</span><span id = "fgt"> - Forgot Password?</span>
+				</div>
+				<a href = "project-edit.html"><div class = "button" style = "top: 20px">Sign In</div></a>
+			</fieldset>
+			<fieldset id = "reg" class = "box" onclick = "lengthen(); this.onclick=null;">
+				<p>New to ABID?<br />Sign up to explore...</p>
+				<div id = "reg-wrap">
+					<input type = "text" placeholder = "E-mail" id = "newemail" size = "29"><br />
+					<input type = "text" placeholder = "Password" size = "29"><br />
+					<input type = "text" placeholder = "First Name" size = "10"><input type = "text" placeholder = "Last Name" size = "10">
+					<div id = "hidden" style = "display: none">
+						<input type = "text" placeholder = "Country" size = "29"><br />
+						<select id="how_hear_us" name="how_hear_us">
+							<option value="" selected="selected">How did you hear about us?</option>
+							<option value="">from a friend</option>
+							<option value="">banner/advertising</option>
+							<option value="">blog</option>
+							<option value="">event/conference</option>
+							<option value="">forum</option>
+							<option value="">email advertising or newsletter</option>
+							<option value="">twitter</option>
+							<option value="">search engine</option>
+							<option value="">press/media</option>
+							<option value="">other</option>
+						</select>
+					</div>
+				</div>
+				<div class = "button">Sign Up</div>
+			</fieldset>
+		</section>
+		<footer>
+			Copyright &copy 2012 ABID Technology. All Rights Reserved.
+		</footer>
+		<script>
+			function lengthen()
+			{
+				document.getElementById('reg').style.height = '260px';
+				document.getElementById('hidden').style.display = 'block';
+			}
+		</script>
+	</body>
+</html>

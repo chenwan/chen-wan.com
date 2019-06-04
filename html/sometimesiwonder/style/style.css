@@ -1,0 +1,171 @@
+/* A Linux- and Windows-friendly sans-serif font stack: http://prospects.mhurrell.co.uk/post/updating-the-helvetica-font-stack */
+body {font-family: 'Indie Flower', cursive;}
+
+/* Using local fonts? Check out Font Squirrel's webfont generator: http://www.fontsquirrel.com/tools/webfont-generator */
+
+/* We like off-black for text. */
+body, select, input, textarea {color: #333;}
+
+a {color: #03f;}
+a:hover {color: #69f;}
+
+/* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
+::selection {background: #fcd700; color: #fff; text-shadow: none;} 
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: #fcd700;} 
+
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+/* Mozilla dosen't style place holders by default */
+input:-moz-placeholder { color:#a9a9a9; }
+textarea:-moz-placeholder { color:#a9a9a9; }
+
+body
+{
+	background-image: url("../images/background.png");
+}
+.button
+{
+	display:inline-block;
+	margin:16px 32px 32px 32px;
+	background:red;
+	color:white;
+	border-radius:50%;
+        font-size:large;
+	width:50px;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	border:none;
+	outline:none;
+}
+.button:hover
+{
+	cursor:pointer;
+}
+.hidden
+{
+	display:none;
+}
+.error
+{
+	display:none;
+}
+header
+{
+	text-align:center;
+}
+#question
+{
+	font-family: 'Rock Salt', cursive;
+	font-size: 5vw;
+	font-weight:bold;
+	text-shadow: 10px 10px 3px rgba(0,0,0,0.2);
+}
+#form-add textarea
+{
+	max-width:100%;
+}
+.answer
+{
+	position:relative;
+	margin:6px;
+	padding:10px 50px;
+	/*height:40px;*/
+	line-height:25px;
+	color:white;
+	display:inline-block;
+	float:left;
+}
+.answer:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  right: 10px;
+  left: auto;
+  width: 50%;
+  top: 20px;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+.answer.nickname
+{
+	padding-left:10px;
+	font-size:small;
+}
+.answer .like
+{
+	position:absolute;
+	left:10px;
+	top:10px;
+	width:20px;
+	height:20px;
+	outline:none;
+}
+.answer .delete
+{
+	position:absolute;
+	right:-7px;
+	top:-7px;
+        width:20px;
+	height:20px;
+	line-height:0px;
+font-size:12px;
+margin:0;
+background:grey;
+}
+.likes
+{
+	position:absolute;
+	right:10px;
+	top:10px;
+}
+#answers-wrapper:after {
+	content:" ";
+	display:block;
+	height:0;
+	clear:both;
+}
+footer
+{
+	text-align:center;
+    padding:10px 0;
+}
+
+/* Media queries
+-------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 480px) {
+#question
+{
+	font-size: 8vw;
+}
+.answer *
+{
+	display:inline-block;
+}
+
+}
+
+
+
+/* Print styles
+-------------------------------------------------------------------------------*/
+@media print {
+
+
+
+}
