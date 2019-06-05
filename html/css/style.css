@@ -208,15 +208,13 @@ canvas
 }
 #navigation ul
 {
-    float:right;
-    width:75%;
+    margin-left:10%;
 }
 #navigation li
 {
     display:inline-block;  
-    width:24%;
+    width:20%;
     margin:0;
-    font-size:120%;
 }
 #navigation li:hover a
 {
