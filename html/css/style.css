@@ -175,7 +175,6 @@ canvas
 #navigation #logo
 {
     float:left; 
-    width:15%;
     min-width:140px;
 }
 #navigation #logo #logo_head
@@ -298,6 +297,7 @@ canvas
 {
     display:inline-block;
     width:24%;
+    min-width:120px;
     margin-top:8px;
     font-size:90%;
     color:#ccc; 
@@ -381,11 +381,11 @@ canvas
     text-align:center;  
     background:white;
     overflow:hidden;
-    padding:0 0 10px 5px;
+    padding-bottom:10px;
 }
 #portfolio_wrapper li
 {
-    width:31%;
+    width:31.3%;
     margin:8px 1%;
     display:block;
     float:left;
@@ -516,14 +516,14 @@ canvas
 {
     display:block;  
     float:left;
-    width:25%;
+    width:26%;
 }
 .project-left img
 {
     max-height:200px;  
     width:100%;
     max-width:250px;
-    margin:20px 0 20px 5.45%;
+    margin:20px 4%;
     transition:all 0.3s;
     -moz-transition:all 0.3s; /* Firefox 4 */
     -webkit-transition:all 0.3s; /* Safari and Chrome */
@@ -535,8 +535,8 @@ canvas
 }
 .project-right
 {
-    width:65%;
-    padding:20px 4%;
+    width:70%;
+    margin:20px 2%;
     display:block;    
     float:left;
 }
@@ -552,7 +552,7 @@ canvas
 {
     font-size:100%;
     font-weight:bold;
-    margin:0 0 10px 0;    
+    margin-bottom:10px;    
 }
 /* Contact */
 #contact 
@@ -618,27 +618,32 @@ canvas
     }
     #navigation
     {
-        margin-left:0%;  
+        margin-left:0%; 
         width:100%;
     }
     #navigation ul
     {
         position:fixed;
-        width:85%;
+        width:80%;
         right:0%;
     }
     #projects_wrapper
     {
-        width:84%;
+        width:75%;
     }
     #projects_index
     {
-        width:16%;
+        width:25%;
+        min-width:100px;
     }
 }
 
 @media (max-width : 650px)
 {
+    #center_wrapper
+    {
+        min-width:400px;
+    }
     #menu_wrapper 
     {
         top:20px;
@@ -671,7 +676,7 @@ canvas
     }
     #portfolio_wrapper li
     {
-        width:47.5%;
+        width:48%;
     }
     #about_left
     {
@@ -683,5 +688,37 @@ canvas
     {
         width:100%;  
         display:block;
+    }
+}
+@media (max-width : 500px)
+{
+    #navigation #logo
+    {
+        min-width:50px;
+    }
+    #navigation #logo #logo_tail
+    {
+        display:none;
+    }
+    #navigation ul
+    {
+        width:90%;
+        margin:0;
+    }
+}
+@media (max-width : 400px)
+{
+    .project-left
+    {
+        width:40%;
+    }
+    .project-right
+    {
+        width:54%;
+        margin:20px 3%;
+    }
+    #portfolio_wrapper li
+    {
+        width:98%;
     }
 }
