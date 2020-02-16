@@ -6,8 +6,9 @@ $conn = OpenConnection();
 $tbname = "meaningoflife";
 
 // define variables and set to empty values
-$answerErr  = "";
-$answer = $nickname = "";
+$answerErr = "";
+$answer = "";
+$nickname = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	if (empty($_POST["answer"])) {

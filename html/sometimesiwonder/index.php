@@ -33,7 +33,7 @@
 					Answer: <textarea name="answer" rows="5" cols="40" maxlength="256"></textarea>
 					<span class="error">* <?php echo $answerErr;?></span>
 					<br>
-					Display Name (Optional): <input type="text" name="nickname"">
+					Display Name: <input type="text" name="nickname">
 					<br>
 					<input class="button" id="button-submit" type="submit" name="submit" value="&#10003;"> 
 					<input class="button" id="button-close" value="x">
