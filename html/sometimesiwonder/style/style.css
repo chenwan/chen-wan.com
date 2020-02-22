@@ -82,24 +82,24 @@ header
 }
 .answer:after
 {
-  z-index: -1;
-  position: absolute;
-  content: "";
-  bottom: 15px;
-  right: 10px;
-  left: auto;
-  width: 50%;
-  top: 20px;
-  max-width:300px;
-  background: #777;
-  -webkit-box-shadow: 0 15px 10px #777;
-  -moz-box-shadow: 0 15px 10px #777;
-  box-shadow: 0 15px 10px #777;
-  -webkit-transform: rotate(3deg);
-  -moz-transform: rotate(3deg);
-  -o-transform: rotate(3deg);
-  -ms-transform: rotate(3deg);
-  transform: rotate(3deg);
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    right: 10px;
+    left: auto;
+    width: 50%;
+    top: 20px;
+    max-width:300px;
+    background: #777;
+    -webkit-box-shadow: 0 15px 10px #777;
+    -moz-box-shadow: 0 15px 10px #777;
+    box-shadow: 0 15px 10px #777;
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
 }
 .answer.nickname
 {
@@ -120,12 +120,12 @@ header
 	position:absolute;
 	right:-7px;
 	top:-7px;
-        width:20px;
+    width:20px;
 	height:20px;
 	line-height:0px;
-font-size:12px;
-margin:0;
-background:grey;
+    font-size:12px;
+    margin:0;
+    background:grey;
 }
 .likes
 {
@@ -157,15 +157,10 @@ footer
 {
 	display:inline-block;
 }
-
 }
-
-
 
 /* Print styles
 -------------------------------------------------------------------------------*/
 @media print {
-
-
 
 }
