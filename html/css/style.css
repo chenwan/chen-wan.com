@@ -21,7 +21,7 @@ body:before {
 }
 p
 {
-    line-height:1.3em;  
+    line-height:1.5em;  
     margin:0.5em 0;  
 }
 li
@@ -247,7 +247,7 @@ canvas
     width:80%;
     margin-left:10%;
     text-align:right;
-    font-size:80%;
+    font-size:90%;
     color:#555;
     margin-top:10px; 
     margin-bottom:50px;  
@@ -402,8 +402,7 @@ canvas
 }
 .figcaption
 {
-    position: absolute; 
-    font-size:90%;
+    position: absolute;
     width:100%;
     color: white; 
     padding: 8px 0; 
@@ -445,10 +444,6 @@ canvas
 {
     display:none !important;    
 }
-#cboxTitle
-{
-    font-size:90%;
-}
 /* Projects */
 #projects_index
 {
@@ -470,7 +465,6 @@ canvas
 #projects_index li
 {
     padding:2px 16px;
-    font-size:90%;
     transition:all 0.3s;
     -moz-transition:all 0.3s; /* Firefox 4 */
     -webkit-transition:all 0.3s; /* Safari and Chrome */
@@ -518,12 +512,17 @@ canvas
     float:left;
     width:26%;
 }
+.project-left a
+{
+    width:100%;
+}
 .project-left img
 {
     max-height:200px;  
-    width:100%;
-    max-width:250px;
-    margin:20px 4%;
+    width:92%;
+    max-width:400px;
+    margin:20px 0 20px 8%;
+    object-fit:cover;
     transition:all 0.3s;
     -moz-transition:all 0.3s; /* Firefox 4 */
     -webkit-transition:all 0.3s; /* Safari and Chrome */
@@ -542,8 +541,7 @@ canvas
 }
 .project-right .abstract
 {
-    color:#999;  
-    font-size:90%; 
+    color:#999;
 }
 .project-right h3
 {

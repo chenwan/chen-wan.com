@@ -1,5 +1,4 @@
 // Google Analytics
-
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-32209095-1']);
 _gaq.push(['_trackPageview']);
@@ -10,18 +9,25 @@ _gaq.push(['_trackPageview']);
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
 
-$("#projects_index > ul > li > a").click(function (e) {
-    var id = $(this).attr('href');
-    $(id).parent().effect("highlight", { 'color': '#ffe0f0' }, 1500);
-});
-
-// Hide Header on on scroll down
 var didScroll;
 var lastScrollTop = 0;
 var delta = 5;
 var navbarHeight = $('#header').outerHeight();
 
-$(window).scroll(function (event) {
+// Scroll to and highlight item when clicking href
+$("#projects_index > ul > li > a").click(function (e) {
+    e.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top - 50
+    }, 500);
+
+    var id = $(this).attr('href');
+    $(id).effect("highlight", { color: 'rgba(200,20,20,0.3' }, 1500);
+});
+
+// Hide header when scrolling down, show header when scrolling up
+$(window).scroll(function (e) {
     didScroll = true;
 });
 
