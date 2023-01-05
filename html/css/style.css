@@ -172,6 +172,7 @@ canvas
     margin-left:10%;  
     width:80%;
     min-width:840px;
+    height:100%;
     text-shadow: 0px 1px 2px rgba(128, 10, 10, 0.8);
 }
 #navigation #logo
@@ -614,11 +615,12 @@ canvas
     {
         margin:0 1%; 
         width:98%;
+        min-width:640px;
     }
     #navigation ul
     {
         position:fixed;
-        width:80%;
+        width:78%;
         right:1%;
     }
     #projects_wrapper
@@ -634,7 +636,14 @@ canvas
 
 @media (max-width : 650px)
 {
+    #header {
+        font-size:1em;
+    }
     #center_wrapper
+    {
+        min-width:400px;
+    }
+    #navigation
     {
         min-width:400px;
     }
@@ -685,6 +694,14 @@ canvas
 }
 @media (max-width : 500px)
 {
+    #center_wrapper
+    {
+        min-width:unset;
+    }
+    #navigation
+    {
+        min-width:unset;
+    }
     #navigation #logo
     {
         min-width:50px;
@@ -697,6 +714,9 @@ canvas
     {
         width:90%;
         margin:0;
+    }
+    #projects_wrapper {
+        min-width:unset;
     }
     .project-left {
         width:92%;
