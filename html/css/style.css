@@ -612,14 +612,14 @@ canvas
     }
     #navigation
     {
-        margin-left:0%; 
-        width:100%;
+        margin:0 1%; 
+        width:98%;
     }
     #navigation ul
     {
         position:fixed;
         width:80%;
-        right:0%;
+        right:1%;
     }
     #projects_wrapper
     {
@@ -698,20 +698,23 @@ canvas
         width:90%;
         margin:0;
     }
-}
-@media (max-width : 400px)
-{
-    .project-left
+    .project-left {
+        width:92%;
+        margin:20px 4%;
+    }
+    .project-left img
     {
-        width:40%;
+        width:100%;
+        margin:0;
     }
     .project-right
     {
-        width:54%;
-        margin:20px 3%;
+        width:92%;
+        margin:0 4% 20px 4%;
     }
     #portfolio_wrapper li
     {
-        width:98%;
+        width:100%;
+        margin:8px 0;
     }
 }
